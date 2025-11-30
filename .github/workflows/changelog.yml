@@ -19,6 +19,7 @@ jobs:
           version_prefix: "## "
           version: "3.3.0"
           changelog_path: "apps/test/CHANGELOG.md"
+          encode_for_slack: "false"
 
       - name: Get the output
         run: echo "The Changelog is ${{ steps.changelog.outputs.changelog }}"
