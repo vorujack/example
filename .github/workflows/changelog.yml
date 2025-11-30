@@ -15,7 +15,7 @@ jobs:
         with:
           version_prefix: '## '
           version: '3.3.0'
-          changelog_path: './apps/wallet/CHANGELOG.md'
+          changelog_path: './apps/test/CHANGELOG.md'
 
       - name: Get the output
         run: echo "The Changelog is ${{ steps.changelog.outputs.changelog }}"
