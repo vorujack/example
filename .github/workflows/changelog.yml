@@ -1,0 +1,21 @@
+name: Build for Android
+on:
+  push
+
+env:
+  CI: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Extract Changelog
+        id: changelog
+        uses: nickohold/changelog-version-extractor@v1.0.0
+        with:
+          version_prefix: '## '
+          version: '3.3.0'
+          changelog_path: './apps/wallet/CHANGELOG.md'
+
+      - name: Get the output
+        run: echo "The Changelog is ${{ steps.changelog.outputs.changelog }}"
