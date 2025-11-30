@@ -1,6 +1,6 @@
 # Example
 
-## Version 3.3.0
+## v 3.3.0
 
 ### Minor changes
 
@@ -14,7 +14,7 @@
 - change 5
 - change 6
 
-## 3.2.0
+## v 3.2.0
 
 ### Minor changes
 
